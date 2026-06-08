@@ -1,0 +1,102 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(../img/home-buxexa.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: right;
+  background-attachment: fixed;
+  background-color: #000000;
+  padding-top: 80px;
+  /* Add back the offset */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  color: var(--color-04);
+}
+
+.hero-content-info {
+  width: 50%;
+  text-align: left;
+}
+
+.hero h1 {
+  color: var(--color-01);
+  max-width: 600px;
+  font-size: 6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.hero h1 span {
+  color: var(--color-03);
+}
+
+.hero p {
+  max-width: 500px;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--color-04);
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: start;
+  gap: 3rem;
+
+}
+
+@media (max-width: 900px) {
+  .hero {
+    background-image: url(../img/home-buxexa.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: black;
+    padding-top: 80px;
+  }
+
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .hero-content-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    background-attachment: scroll;
+  }
+}
